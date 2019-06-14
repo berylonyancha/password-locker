@@ -21,3 +21,7 @@ class User:
         '''
         User.user_list.remove(self)
 class Credentials:  
+    '''
+    Class to create and store the user credentials for a new site
+    '''
+    passwords = []
