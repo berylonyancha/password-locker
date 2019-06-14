@@ -29,3 +29,24 @@ class Credentials:
         '''
         Function to create password for a new site
         '''
+        self.site = site
+        self.user_name = user_name
+        self.password = password
+    def create_password(self):
+        '''
+        Saves passwords
+        '''
+        Credentials.passwords.append(self)
+    @classmethod
+    def display_passwords(cls):
+        '''
+        Display saved passwords
+        '''
+        for cls.passwords
+
+
+
+
+
+
+        
