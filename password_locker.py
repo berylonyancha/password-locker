@@ -2,6 +2,7 @@ class User:
     '''
     class to create user information
     '''
+    user_list = []
     def __init__(self, first_name, last_name,password):
         '''
         function to hold user properties
