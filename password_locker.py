@@ -25,3 +25,7 @@ class Credentials:
     Class to create and store the user credentials for a new site
     '''
     passwords = []
+    def __init__(self,site,user_name,password):
+        '''
+        Function to create password for a new site
+        '''
