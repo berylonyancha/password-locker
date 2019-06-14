@@ -1,5 +1,8 @@
 class User:
-
+    '''
+    class to create user information
+    '''
+    
 
 
 
