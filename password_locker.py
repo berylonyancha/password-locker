@@ -32,7 +32,7 @@ class Credentials:
         self.site = site
         self.user_name = user_name
         self.password = password
-    def create_password(self):
+    def save_password(self):
         '''
         Saves passwords
         '''
@@ -42,7 +42,15 @@ class Credentials:
         '''
         Display saved passwords
         '''
-        for cls.passwords
+        return cls.passwords
+    @classmethod
+    def find_site(cls):
+        '''
+        Method that checks for a site and its credentials
+        '''
+        for credentials in cls.passwords:
+            if credentials.site == site
+                return credentials
 
 
 
