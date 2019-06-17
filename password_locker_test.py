@@ -19,3 +19,19 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.first_name,"Beryl")
         self.assertEqual(self.new_user.last_name,"Onyancha")
         self.assertEqual(self.new_user.password,"skittles")
+    def test_save_user(self):
+        '''
+        Test to check if users are added to the user list
+        '''
+        self.new_user.save_user()
+        self.assertEqual(len(User.user_list),1)
+    def test_delete_user(self):
+        '''
+        Test to check if users can be deleted from the users list
+        '''
+        self.new_user.save_user()
+        test_user = User("Test","user","1234")
+        test_user.save_user()
+        self.new_user.delete_user()
+        self.assertEqual(len(User.user_list),1)
+
