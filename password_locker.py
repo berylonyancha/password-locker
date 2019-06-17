@@ -49,15 +49,16 @@ class Credentials:
         Method that checks for a site and its credentials
         '''
         for credentials in cls.passwords:
-            if credentials.site == site
+            if credentials.site == site:
                 return credentials
+
     @classmethod
     def site_exist(cls,site):
         '''
         Method that checks if credentials for a certain site exists
         '''
         for credentials in cls.passwords:
-            if credentials.site == site
+            if credentials.site == site:
                 return True
         return False        
 
