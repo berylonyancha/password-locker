@@ -45,4 +45,10 @@ class TestCredentials(unittest.TestCase):
          Tear down method performs clean up after each test method completes
         '''
         Credentials.passwords = []
-        
+    def test__init__(self):
+        '''
+        Test to check if initialization has been done
+        ''' 
+        self.assertEqual(self.new_credentials.site,"Snapchat")
+        self.assertEqual(self.new_credentials.user_name,"Berylzz")
+        self.assertEqual(self.new_credentials.password,"1234")
