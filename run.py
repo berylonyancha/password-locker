@@ -28,3 +28,10 @@ def display_passwords():
     Function to display saved credentials 
     '''
     return Credentials.display_passwords()
+def find_site(site):
+    '''
+    Function that finds a site credentials by site name
+    '''
+    return Credentials.site_exist(site)
+def main():
+  
