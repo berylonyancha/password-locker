@@ -34,4 +34,15 @@ class TestUser(unittest.TestCase):
         test_user.save_user()
         self.new_user.delete_user()
         self.assertEqual(len(User.user_list),1)
-
+class TestCredentials(unittest.TestCase):
+    def setUp(self):
+        '''
+        Set up method to run before  each test
+        '''
+        self.new_credentials = Credentials("Snapchat","Berylzz","1234")
+    def tearDown(self):
+        '''
+         Tear down method performs clean up after each test method completes
+        '''
+        Credentials.passwords = []
+        
