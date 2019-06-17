@@ -34,4 +34,13 @@ def find_site(site):
     '''
     return Credentials.site_exist(site)
 def main():
-  
+    print("Hello, Habari. Welcome here.What's your name")
+    user_name = input()
+    print(f"Hello {user_name}. How may I be of service to you?")
+    print('\n')
+    while True:
+        print("Use these short codes : ca-Create a new user,dc-Display credentials,fs-Find a site, ex-Exit ")
+        short_code = input().lower()
+if __name__ == '__main__':
+
+    main()
