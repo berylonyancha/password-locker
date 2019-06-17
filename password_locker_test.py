@@ -59,6 +59,15 @@ class TestCredentials(unittest.TestCase):
         '''
         self.new_credentials.save_password()
         self.assertEqual(len(Credentials.passwords), 1)
+    def test_find_site(self):
+        '''
+        Test to check if the find_site methods returns the correct credentials
+        '''
+        self.new_credentials.save_password()
+        snapchat = Credentials("snapchat","Berylzz","1234")
+        snapchat.save_password()
+        credential_exists = (Credentials.find_site('snapchat'))
+        self.assertEqual(credential_exists, snapchat)
   
 if __name__ =='__main__':
     unittest.main()
