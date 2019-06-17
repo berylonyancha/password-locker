@@ -1,16 +1,16 @@
-#PASSWORD LOCKER
+# PASSWORD LOCKER
 This is a Python app that allows you to save passwords to various online accounts.
 
-####Author name
+#### Author name
 Beryl Onyancha
 
-##Description
+## Description
 This is an app that allows users to store account credentials, create new accounts and store their credentials, they can also delete those credentials.
 
-##Technologies Used
+## Technologies Used
 Python 3.6
 
-##Installation requirements
+## Installation requirements
 Ensure you have Python3.6 installed in your computer. you can download it by running this command
 $ sudo apt-get update sudo apt-get install python3.6.
 
@@ -42,10 +42,10 @@ $ python3.6 passwor_locker_test.py
 |Exit application|Enter:ex|Exits Application|
 
 
-##Contact 
+## Contact 
 For any inquiries contact me at berylonyancha@gmail.com
 
-##License
+## License
 MIT License
 
 Copyright (c) [2019] [Beryl Onyancha]
