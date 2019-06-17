@@ -10,4 +10,11 @@ def save_user(user):
     '''
     Function to save user
     '''
-    user.save_user()  
+    user.save_user() 
+def create_credential(site,user_name,password):
+    '''
+	  Function to create a new credential
+    '''
+    new_credentials=Credentials(site,user_name,password)
+    return new_credentials 
+
