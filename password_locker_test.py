@@ -52,3 +52,13 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credentials.site,"Snapchat")
         self.assertEqual(self.new_credentials.user_name,"Berylzz")
         self.assertEqual(self.new_credentials.password,"1234")
+
+    def test_save_passwords(self):
+        '''
+        Test to check if the new credential info is saved into the credentials list
+        '''
+        self.new_credentials.save_password()
+        self.assertEqual(len(Credentials.passwords), 1)
+  
+if __name__ =='__main__':
+    unittest.main()
