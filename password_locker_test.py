@@ -68,6 +68,17 @@ class TestCredentials(unittest.TestCase):
         snapchat.save_password()
         credential_exists = (Credentials.find_site('snapchat'))
         self.assertEqual(credential_exists, snapchat)
+    def test_display_credentials(self):
+        '''
+        Test to check if the display credentials methods displays all saved credentials
+        '''
+        self.new_credentials.save_password()
+        twitter = Credentials('Twitter', 'berrypondis', '12345')
+        twitter.save_password()
+        gmail = Credentials('Gmail', 'hoodrat', '123456')
+        gmail.save_password()
+        self.assertEqual(
+        len(Credentials.display_passwords()), 3)   
   
 if __name__ =='__main__':
     unittest.main()
